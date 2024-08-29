@@ -10,7 +10,7 @@ const app = express();
 const server = createServer(app);
 
 const PORT = process.env.PORT || 3000;
-const CLIENT_ORIGIN = process.env.CLIENT_ORIGIN || "http://localhost:5173";
+const CLIENT_ORIGIN = "*";
 
 const io = new Server(server, {
     cors: {
